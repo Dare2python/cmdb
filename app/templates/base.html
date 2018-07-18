@@ -11,8 +11,8 @@
 <body>
     <div>
         CMDB:
-        <a href="/index">Home</a>
-        <a href="/login">Login</a>
+        <a href="{{ url_for('main.index') }}">Home</a>
+        <a href="{{ url_for('main.login') }}">Login</a>
     </div>
     {% with messages = get_flashed_messages() %}
     {% if messages %}
